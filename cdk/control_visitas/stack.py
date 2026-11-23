@@ -54,7 +54,7 @@ class ControlVisitasStack(cdk.Stack):
                 f"-p 80:8080",
                 # TODO (Tarea 3): pasa al contenedor el nombre del secreto (variable secret_name).
                 f"-e AWS_REGION=us-east-1",
-                "-e SECRET_NAME={secret_name}"
+                "-e SECRET_NAME={secret_name}",
                 "control-visitas",                  # la imagen construida con docker build -t
             ]),
         )
